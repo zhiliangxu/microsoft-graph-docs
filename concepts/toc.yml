@@ -1,5 +1,7 @@
   name: Graph Docs
   items:
+  - name: Microsoft Graph documentation
+    href: index.yml
   - name: Overview of Microsoft Graph
     href: overview.md
     expanded: true
