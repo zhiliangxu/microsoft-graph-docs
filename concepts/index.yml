@@ -1,8 +1,8 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Microsoft Graph
+title: Microsoft Graph documentation
 metadata:
-  title: Microsoft Graph
+  title: Microsoft Graph documentation
   description: Learn how you can use Microsoft Graph to build apps for organizations and consumers that interact with the data of millions of users. 
   services: active-directory
   author: CelesteDG
@@ -99,7 +99,7 @@ sections:
             src: ./images/index/logo_windows.svg
           title: UWP     
       rows:
-        - title:
+        - title: Training
           values:
           - href: /tutorials/angular
           - href: /tutorials/aspnet
