@@ -3710,7 +3710,6 @@
           href: api/reportroot-getyammergroupsactivitycounts.md
     - name: Security
       href: resources/security-api-overview.md
-      displayname: Security API, Microsoft Intelligent Security Graph
       items:
       - name: Alerts
         href: resources/alert.md
