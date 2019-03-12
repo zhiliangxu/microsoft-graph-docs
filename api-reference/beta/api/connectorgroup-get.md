@@ -45,7 +45,7 @@ Here is an example of the request.
   "name": "get_connectorgroup"
 }-->
 ```http
-GET https://graph.microsoft.com/{ver}/connectorGroups/{id}
+GET https://graph.microsoft.com/beta/connectorGroups/{id}
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

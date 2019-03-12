@@ -43,7 +43,7 @@ Here is an example of the request.
   "name": "create_connector_from_connectorgroup"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectorGroups/{id}/members/$ref
+POST https://graph.microsoft.com/beta/connectorGroups/{id}/members/$ref
 Content-type: application/json
 Content-length: 104
 

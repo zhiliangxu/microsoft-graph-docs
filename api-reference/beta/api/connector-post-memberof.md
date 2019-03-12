@@ -44,12 +44,12 @@ Here is an example of the request.
   "name": "create_connectorgroup_from_connector"
 }-->
 ```http
-POST https://graph.microsoft.com/{ver}/connectors/{id}/memberOf
+POST https://graph.microsoft.com/beta/connectors/{id}/memberOf
 Content-type: application/json
 Content-length: 99
 
 {
-  "@odata.id": "https://graph.microsoft.com/{ver}/connectorGroups/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/connectorGroups/{id}"
 }
 ```
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.

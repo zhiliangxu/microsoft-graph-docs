@@ -47,7 +47,7 @@ Here is an example of the request.
   "name": "update_connectorgroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/{ver}/connectorGroups/{id}
+PATCH https://graph.microsoft.com/beta/connectorGroups/{id}
 Content-type: application/json
 Content-length: 99
 
