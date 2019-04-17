@@ -2,7 +2,7 @@ Param(
     [switch]$cleanUp,
     [string]$file
 )
-$apiDoctorVersion = $env:APIDOCTOR_VERSION
+$apiDoctorVersion = "1.2.1811.291"
 $repoPath = (Get-Location).Path
 $downloadedApiDoctor = $false
 $downloadedNuGet = $false
