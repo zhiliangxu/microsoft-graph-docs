@@ -1,6 +1,14 @@
 # Credential Usage Summary
 Provides the summary of self-service password reset usage for a given tenant. This API provides the current state of how many users in your organization are using self-service password reset capabilities
 
+---
+author: dkershaw
+localization_priority: Normal
+ms.prod: identity and access reports
+ms.date: 04/25/2019
+---
+
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
 
