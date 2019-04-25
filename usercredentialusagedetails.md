@@ -2,6 +2,12 @@
 
 Provides the details of self-service password reset usage for a given tenant. This API provides the usage details on self-service password reset for the last 30 days. Details include User, status of the reset, reason for failure etc.
 
+---
+author: dkershaw
+localization_priority: Normal
+ms.prod: identity and access reports
+ms.date: 04/25/2019
+---
 
 ## Methods
 
