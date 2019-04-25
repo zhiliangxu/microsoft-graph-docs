@@ -1,6 +1,13 @@
 # Credentials Registration Details
 Provides the details of self-service password reset and Multi-Factor Authentication registration for a given tenant. This API provides the registration usage for all registered users for self-service password reset and Multi-Factor Authentication capabilities. Details include user info, status of registration, authentication method used etc.
 
+---
+author: dkershaw
+localization_priority: Normal
+ms.prod: identity and access reports
+ms.date: 04/25/2019
+---
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
