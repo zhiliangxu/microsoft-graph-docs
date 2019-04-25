@@ -1,7 +1,10 @@
 ---
-title: "Azure AD Authentication Methods Usage Report API overview"
-description: "The authentication methods usage report helps an organization understand how their end users are using Azure Active Directory capabilities such as self-service password reset and Multi-Factor Authentication. Using this report, you now can understand how end users are registering for self-service password reset and Multi-Factor Authentication using the various authentication methods provided by Azure Active Directory as well as how they are using these capabilities. You can use these reports for both troubleshooting as well as gaining insights into how to maximize these capabilities within your organization."
-localization_priority: Priority
+title: "Azure AD authentication methods usage report API overview"
+description: "The authentication methods usage report helps an organization understand how their end users are using Azure Active Directory capabilities such as self-service password reset and Multi-Factor Authentication."
+author: dhanyahk.
+localization_priority: Normal.
+ms.prod: reports.
+ms.date: 04/25/2019
 ---
 
 # Azure AD Credentials Usage Report overview
