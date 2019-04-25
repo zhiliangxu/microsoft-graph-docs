@@ -2,6 +2,13 @@
 
 Provides the details of self-service password reset and Multi-Factor Authentication Registration for a given tenant. This API provides the registration usage for all registered users for self-service password reset and Multi-Factor Authentication capabilities. Details include user info, status of registration, authentication method used etc.
 
+---
+author: dkershaw
+localization_priority: Normal
+ms.prod: identity and access reports
+ms.date: 04/25/2019
+---
+
 
 ## Methods
 
