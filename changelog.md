@@ -1,4 +1,10 @@
 # Changelog for Microsoft Graph
+---
+author: dkershaw
+localization_priority: Normal
+ms.prod: identity and access reports
+ms.date: 04/25/2019
+---
 
 This changelog covers what's changed in the Reports node in Microsoft Graph for the beta endpoint of Microsoft Graph APIs.
 
