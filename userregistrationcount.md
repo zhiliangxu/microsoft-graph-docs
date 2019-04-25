@@ -1,6 +1,12 @@
 # userRegistrationCount resource type
 Provides the Registration count and status for users in your tenant.
 
+---
+author: dkershaw
+localization_priority: Normal
+ms.prod: identity and access reports
+ms.date: 04/25/2019
+---
 
 
 ## Properties
