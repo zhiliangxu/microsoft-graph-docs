@@ -65,7 +65,7 @@ The following is a JSON representation of the resource.
 
  
     {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234"
+      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "userPrincipalName":"abc@cd.com",
       "userDisplayName": "abc",
       "authMethods": {"email", "mobileSMS"},
