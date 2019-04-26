@@ -64,7 +64,7 @@ Content-Type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.credentialUserRegistrationCount)",
   "value": [
     {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234"
+      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "totalUserCount" : 23123,
       "userRegistrationCounts" :
       [
