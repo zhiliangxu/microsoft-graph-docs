@@ -1,5 +1,5 @@
 # userRegistrationCount resource type
-Provides the Registration count and status for users in your tenant.
+Provides the registration count and status for users in your tenant.
 
 ---
 author: dkershaw
@@ -18,12 +18,12 @@ ms.date: 04/25/2019
 ## Enum Values 
 
 ### registrationStatus Property
-| Enum Name | Value | Description
-| :---------|:-------|:----------
-registered|	0| User is registered for self-service password reset.	
-enabled|	1	| User is enabled for self-service password reset. 
-capable|	2	| User is ready to perform Multi-Factor Authentication or self-service password reset. This is calculated based on registered and enabled status.
-mfaRegistered|	3	| User is registered for Multi-Factor Authentication.
+| Enum Name | Value | Description|
+| :---------|:-------|:----------|
+registered|	0| User is registered for self-service password reset.|
+enabled|	1	| User is enabled for self-service password reset. |
+capable|	2	| User is ready to perform Multi-Factor Authentication or self-service password reset. This is calculated based on registered and enabled status.|
+mfaRegistered|	3	| User is registered for Multi-Factor Authentication.|
 
 
 
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
 
 ```json
    {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234"
+      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "totalUserCount" : 23123,
       "userRegistrationCounts" :
       [
