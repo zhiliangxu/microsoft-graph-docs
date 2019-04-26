@@ -1,6 +1,6 @@
 ---
 title: "Azure AD authentication methods usage report API overview"
-description: "The authentication methods usage report helps an organization understand how their end users are using Azure Active Directory capabilities such as self-service password reset and Multi-Factor Authentication."
+description: "The authentication methods usage report helps an organization understand how their end users are using Azure Active Directory capabilities such as self-service password reset and multi-factor authentication (MFA)."
 author: dkershaw
 localization_priority: Normal
 ms.prod: identity and access reports
@@ -15,14 +15,12 @@ The authentication methods usage report helps an organization understand how the
 
 ## What does this report cover?
 
-Azure Active Directory provides two types of activity logs:
-
-- Authentication Method Registration Summary and Details (Self-service password reset registration at aka.ms/ssprsetup, Combined security info registration aka.ms/mysecurityinfo)
-- Authentication Method Usage Summary and Details (Self-service password reset usage at aka.ms/sspr)
+- Authentication Method Registration Summary and Details (Self-service password reset registration at aka.ms/ssprsetup, Combined security info registration https://aka.ms/mysecurityinfo)
+- Authentication Method Usage Summary and Details (Self-service password reset usage at https://aka.ms/sspr)
 
 ## What's not there?
 
-- Authentication Method Registration Details for Multi-Factor Authentication at aka.ms/mfasetup
+- Authentication Method Registration Details for Multi-Factor Authentication at https://aka.ms/mfasetup
 - Multi-Factor Authentication Usage (both Per-user and Conditional Access-based Multi-Factor Authentication)
 
 ## What can I do with APIs in Microsoft Graph?
@@ -39,7 +37,7 @@ GET Credentials usage details  | [https://graph.microsoft.com/beta/reports/userc
 
 ## What licenses do I need?
 
-Usage Reports are available for features that you've licensed for. Hence, this report is available if you have the capability to leverage self-service password reset and Multi-Factor Authentication in your tenant.
+Usage Reports are available for features that you've licensed for. Hence, this report is available if you have the capability to leverage self-service password reset and MFA in your tenant.
 
 
 ## Next Steps
