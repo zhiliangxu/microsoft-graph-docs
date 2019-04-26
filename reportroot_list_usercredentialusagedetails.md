@@ -28,7 +28,7 @@ This method supports the [OData Query Parameters](http://graph.microsoft.io/docs
 | Name      |Description|Example|Supported Operators|
 |:----------|:----------|:-------|:-------------------|
 |Period	|Filter using time period for which you need the usage data	|/reports/getCredentialUsageSummary(period='D30') /reports/getCredentialUsageSummary(period='d30')|	D1, D7,D30. Period is case insensitive
-|feature|	Filter by type of usage data you want (Registration vs. Reset)|	/reports/getCredentialUsageSummary(period='D30') ?$filter=feature eq Microsoft.AAD.Reporting.featureType'registration'|	Eq|
+|feature|	Filter by type of usage data you want (registration vs. reset)|	/reports/getCredentialUsageSummary(period='D30') ?$filter=feature eq Microsoft.AAD.Reporting.featureType'registration'|	Eq|
 
 
 ## Request headers
