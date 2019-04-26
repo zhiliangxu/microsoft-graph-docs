@@ -1,6 +1,3 @@
-# credentialUserRegistrationDetails resource type
-
-Provides the details of self-service password reset and Multi-Factor Authentication Registration for a given tenant. This API provides the registration usage for all registered users for self-service password reset and Multi-Factor Authentication capabilities. Details include user info, status of registration, authentication method used etc.
 
 ---
 author: dkershaw
@@ -8,6 +5,10 @@ localization_priority: Normal
 ms.prod: identity and access reports
 ms.date: 04/25/2019
 ---
+
+# credentialUserRegistrationDetails resource type
+
+Provides the details of self-service password reset and Multi-Factor Authentication Registration for a given tenant. This API provides the registration usage for all registered users for self-service password reset and Multi-Factor Authentication capabilities. Details include user info, status of registration, authentication method used etc.
 
 
 ## Methods
@@ -19,7 +20,7 @@ ms.date: 04/25/2019
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|authMethods|string|Provides the authentication method used by the user when performing a password reset or MFA. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. Check out the [Enum value details](#Enum-values-Details) below. 
+|authMethods|String|Provides the authentication method used by the user when performing a password reset or MFA. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. Check out the [Enum value details](#Enum-values-Details) below. 
 |id|String| Read-only.|Unique Id for the activity
 |isCapable|Boolean|A flag that says if the user is ready to perform self-service password reset or Multi-Factor Authentication. |
 |isEnabled|Boolean|Provides the list of users who are ready to perform self-service password reset.|
