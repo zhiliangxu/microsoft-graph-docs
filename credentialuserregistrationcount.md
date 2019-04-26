@@ -1,12 +1,13 @@
-# credentialUserRegistrationCount resource type
-
-Provides the summary of self-service password reset and Multi-Factor Authentication registration for a given tenant. This API provides the current state of how many users in your organization are registered for self-service password reset and Multi-Factor Authentication capabilities.
 ---
 author: dkershaw
 localization_priority: Normal
 ms.prod: identity and access reports
 ms.date: 04/25/2019
 ---
+# credentialUserRegistrationCount resource type
+
+Provides the summary of self-service password reset and Multi-Factor Authentication registration for a given tenant. This API provides the current state of how many users in your organization are registered for self-service password reset and Multi-Factor Authentication capabilities.
+
 
 ## Methods
 
@@ -40,7 +41,7 @@ The following is a JSON representation of the resource.
 
 ```json
   {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234"
+      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "totalUserCount" : 23123,
       "userRegistrationCounts" :
       [
