@@ -1,12 +1,13 @@
-# Credential Usage Summary
-Provides the summary of self-service password reset usage for a given tenant. This API provides the current state of how many users in your organization are using self-service password reset capabilities
-
 ---
 author: dkershaw
 localization_priority: Normal
 ms.prod: identity and access reports
 ms.date: 04/25/2019
 ---
+
+# Credential Usage Summary
+Provides the summary of self-service password reset usage for a given tenant. This API provides the current state of how many users in your organization are using self-service password reset capabilities
+
 
 
 ## Permissions
@@ -27,13 +28,13 @@ GET /reports/credentialUsageSummary
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 | Name      |Description|Example|Supported Operators
-|:----------|:----------|-------|-------------------
-|feature|	Filter by type of usage data you want (Registration vs. Reset)|	/reports/userCredentialUsageDetails?$filter=feature eq Microsoft.AAD.Reporting.featureType'registration'	|eq
-|userDisplayName	|Filter by UserName|	/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'/reports/userCredentialUsageDetails?$filter=startswith(userDisplayName,' ')	|Eq, startswith(), orderby. Support case insensitive
-userPrincipalName|	Filter by User Principal Name|	/reports/userCredentialUsageDetails?$filter=userPrincipalNameeq 'ABCD' /reports/userCredentialUsageDetails?$filter=startswith(userPrincipalName,' ')	|	Eq, startswith(), orderby. Support case insensitive
+|:----------|:----------|:-------|:-------------------|
+|feature|	Filter by type of usage data you want (Registration vs. Reset)|	/reports/userCredentialUsageDetails?$filter=feature eq Microsoft.AAD.Reporting.featureType'registration'|eq|
+|userDisplayName	|Filter by UserName|	/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD'/reports/userCredentialUsageDetails?$filter=startswith(userDisplayName,' ')|Eq, startswith(), orderby. Support case insensitive|
+|userPrincipalName|	Filter by User Principal Name|	/reports/userCredentialUsageDetails?$filter=userPrincipalNameeq 'ABCD' /reports/userCredentialUsageDetails?$filter=startswith(userPrincipalName,' ')	|	Eq, startswith(), orderby. Support case insensitive|
 |isSuccess|	Filter by status of the activity|	/reports/userCredentialUsageDetails?$filter=isSuccess eq true	|	Eq, orderby|
-|authMethod	 |Filter by the authentication methods using during registration|	/reports/userCredentialUsageDetails?$filter=authMethod eq Microsoft.AAD.Reporting.authMethodsType'email'	|Eq, orderby
-|failureReason	|Filter by failure reason (if the activity has failed)|	/reports/userCredentialUsageDetails?$filter=failureReason'ABCD' /reports/userCredentialUsageDetails?$filter=startswith(failureReason,' ')	|Eq, startswith(), orderby. Support case insensitive
+|authMethod	 |Filter by the authentication methods using during registration|	/reports/userCredentialUsageDetails?$filter=authMethod eq Microsoft.AAD.Reporting.authMethodsType'email'	|Eq, orderby|
+|failureReason	|Filter by failure reason (if the activity has failed)|	/reports/userCredentialUsageDetails?$filter=failureReason'ABCD' /reports/userCredentialUsageDetails?$filter=startswith(failureReason,' ')	|Eq, startswith(), orderby. Support case insensitive|
 
 ## Request headers
 | Name      |Description|
