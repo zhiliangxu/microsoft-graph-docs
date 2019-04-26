@@ -25,10 +25,10 @@ GET /reports/credentialUserRegistrationDetails
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-| Name      |Description|Example|Supported Operators
-|:----------|:----------|-------|-------------------
-|userDisplayName|	 Filter by UserName	|/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD' /reports/userCredentialUsageDetails?$filter=startswith(userDisplayName,' ')	|Eq, startswith(), orderby, Support case insensitive|
-|userPrincipalName	 |Filter by User Principal Name|	/reports/userCredentialUsageDetails?$filter=userPrincipalNameeq 'ABCD' /reports/userCredentialUsageDetails?$filter=startswith(userPrincipalName,' ')	|	Eq, startswith(), orderby, Support case insensitive
+| Name      |Description|Example|Supported Operators|
+|:----------|:----------|:-------|:-------------------|
+|userDisplayName|	 Filter by UserName	|/reports/userCredentialUsageDetails?$filter=userDisplayName eq 'ABCD' /reports/userCredentialUsageDetails?$filter=startswith(userDisplayName,' ')	|Eq, startswith(), orderby, Supports case insensitive|
+|userPrincipalName	 |Filter by User Principal Name|	/reports/userCredentialUsageDetails?$filter=userPrincipalNameeq 'ABCD' /reports/userCredentialUsageDetails?$filter=startswith(userPrincipalName,' ')	|	Eq, startswith(), orderby, Supports case insensitive|
 |authMethods|	 Filter by the authentication methods using during registration|	/reports/userCredentialUsageDetails?authMethods/any(t:t eq Microsoft.AAD.Reporting.authMethodsType'email')	| 	eq|
 |isRegistered	| Filter for users who have registered for SSPR|	/reports/userCredentialUsageDetails?$filter=isRegisteredeq true	|	eq, orderby|
 |isEnabled	 |Filter for users who have been enabled for SPPR|	/reports/userCredentialUsageDetails?$filter=isEnabledeq true	|	eq, orderby|
@@ -69,7 +69,7 @@ Content-Type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.credentialUserRegistrationDetails)",
   "value":[
     {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234"
+      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "userPrincipalName":"abc@cd.com",
       "userDisplayName": "abc",
       "authMethods": {"email", "mobileSMS"},
