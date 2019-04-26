@@ -1,6 +1,3 @@
-# List Credentials Usage Details 
-Provides the details of self-service password reset usage for a given tenant. This API provides the usage details on self-service password reset for the last 30 days. Details include User, status of the reset, reason for failure etc.
-
 ---
 author: dkershaw
 localization_priority: Normal
@@ -8,6 +5,8 @@ ms.prod: identity and access reports
 ms.date: 04/25/2019
 ---
 
+# List Credentials Usage Details 
+Provides the details of self-service password reset usage for a given tenant. Details include User, status of the reset, reason for failure etc.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](../../../concepts/permissions_reference.md).
@@ -26,10 +25,10 @@ GET /reports/userCredentialUsageDetails
 ## Optional query parameters
 This method supports the [OData Query Parameters](http://graph.microsoft.io/docs/overview/query_parameters) to help customize the response.
 
-| Name      |Description|Example|Supported Operators
-|:----------|:----------|-------|-------------------
-|Period	|Filter using time period for which you need the usage data	|/reports/getCredentialUsageSummary(period='D30') /reports/getCredentialUsageSummary(period='d30') 	D1, D7,D30	|Period is case insensitive
-|feature|	Filter by type of usage data you want (Registration vs. Reset)|	/reports/getCredentialUsageSummary(period='D30') ?$filter=feature eq Microsoft.AAD.Reporting.featureType'registration'|	Eq
+| Name      |Description|Example|Supported Operators|
+|:----------|:----------|:-------|:-------------------|
+|Period	|Filter using time period for which you need the usage data	|/reports/getCredentialUsageSummary(period='D30') /reports/getCredentialUsageSummary(period='d30')|	D1, D7,D30. Period is case insensitive
+|feature|	Filter by type of usage data you want (Registration vs. Reset)|	/reports/getCredentialUsageSummary(period='D30') ?$filter=feature eq Microsoft.AAD.Reporting.featureType'registration'|	Eq|
 
 
 ## Request headers
@@ -47,7 +46,7 @@ The following is an example of the request.
   "name": "get_usercredentialusagedetails"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/reports/userCredentialUsageDetails
+GET https://graph.microsoft.com/beta/reports/userCredentialUsageDetails
 ```
 ##### Response
 The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
@@ -67,7 +66,7 @@ Content-Type: application/json
   "@odata.context":"https://graph.microsoft.com/beta/reports/$metadata#Collection(microsoft.graph.getUserCredentialUsageDetails)",
   "value":[
     {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234"
+      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "feature":"registration",
       "userPrincipalName":"abc@cd.com",
       "userDisplayName": "abc",
