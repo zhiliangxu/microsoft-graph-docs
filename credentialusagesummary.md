@@ -1,11 +1,12 @@
-# credentialUsageSummary resource type
-Provides the summary of self-service password reset usage for a given tenant. This API provides the current state of how many users in your organization are using self-service password reset capabilities.
 ---
 author: dkershaw
 localization_priority: Normal
 ms.prod: identity and access reports
 ms.date: 04/25/2019
 ---
+# credentialUsageSummary resource type
+Provides the summary of self-service password reset usage for a given tenant. This API provides the current state of how many users in your organization are using self-service password reset capabilities.
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -63,7 +64,7 @@ The following is a JSON representation of the resource.
 
 ```json
     {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234"
+      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "feature":"registration",
       "successfulActivityCount":"12345",
       "failureActivityCount": "123",
