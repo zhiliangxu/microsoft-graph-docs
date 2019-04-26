@@ -1,6 +1,3 @@
-# userCredentialUsageDetails resource type
-
-Provides the details of self-service password reset usage for a given tenant. This API provides the usage details on self-service password reset for the last 30 days. Details include User, status of the reset, reason for failure etc.
 
 ---
 author: dkershaw
@@ -8,6 +5,10 @@ localization_priority: Normal
 ms.prod: identity and access reports
 ms.date: 04/25/2019
 ---
+
+# userCredentialUsageDetails resource type
+
+Provides the details of self-service password reset usage for a given tenant. This API provides the usage details on self-service password reset for the last 30 days. Details include User, status of the reset, reason for failure etc.
 
 ## Methods
 
@@ -17,16 +18,15 @@ ms.date: 04/25/2019
 
 
 ## Properties
-| Property     | Type        | Description | Filterable
-|:-------------|:------------|:------------|------------
+| Property     | Type        | Description | 
+|:-------------|:------------|:------------|
 |authMethod|string|Provides the authentication method used by the user when performing a password reset or Multi-Factor Authentication. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. Check out the [Enum values](#Enum-values-Details) section below.|
-|failureReason|String||
+|failureReason|String|Provides the failure reason for the corresponding reset.|
 |feature|string| Possible values are: `registration`, `reset`, `unknownFutureValue`. Check out the [Enum values](#Enum-values-Details) section below. |
-|failureReason|String|||
-|id|String| Read-only.|
-|isSuccess|Boolean||
-|userDisplayName|String||
-|userPrincipalName|String||
+|id|String| Read-only.|Unique Id of the activity.|
+|isSuccess|Boolean|A flag that indicates success or failure.|
+|userDisplayName|String|User name of the user performing the reset.|
+|userPrincipalName|String|User Principal Name of the user performing the reset.|
 
 ## Enum values Details
 ### Auth Method Property
@@ -70,7 +70,7 @@ The following is a JSON representation of the resource.
 
 ```json
   {
-      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234"
+      "id" : "d3590ed6-52b3-4102-aeff-aad2292ab01234",
       "feature":"registration",
       "userPrincipalName":"abc@cd.com",
       "userDisplayName": "abc",
