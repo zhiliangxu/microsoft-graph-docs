@@ -1,61 +1,64 @@
-
 ---
+title: "userCredentialUsageDetails"
+description: "Provides the details of self-service password reset usage for a given tenant."
 author: dkershaw
 localization_priority: Normal
 ms.prod: identity and access reports
-ms.date: 04/25/2019
 ---
 
 # userCredentialUsageDetails resource type
 
-Provides the details of self-service password reset usage for a given tenant. Details include User, status of the reset, reason for failure etc.
+Provides the details of self-service password reset usage for a given tenant. Details include user information, status of the reset, and the reason for failure.
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
-| [Get userCredentialUsageDetails](../api/usercredentialusagedetails_get.md) | [userCredentialUsageDetails](usercredentialusagedetails.md) | provides the usage details on self-service password reset for the last 30 days. Details include User, status of the reset, reason for failure etc. |
+| Method | Return Type | Description |
+| ------ | ----------- | ----------- |
+| [Get userCredentialUsageDetails](../api/usercredentialusagedetails_get.md) | [userCredentialUsageDetails](usercredentialusagedetails.md) | Provides the usage details on self-service password reset for the last 30 days. |
 
 
 ## Properties
-| Property     | Type        | Description | 
-|:-------------|:------------|:------------|
-|authMethod|string|Provides the authentication method used by the user when performing a password reset or multi-factor authentication. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. Check out the [Enum values](#Enum-values-Details) section below.|
-|failureReason|String|Provides the failure reason for the corresponding reset.|
-|feature|string| Possible values are: `registration`, `reset`, `unknownFutureValue`. Check out the [Enum values](#Enum-values-Details) section below. |
-|id|String| Read-only.|Unique Id of the activity.|
-|isSuccess|Boolean|A flag that indicates success or failure.|
-|userDisplayName|String|User name of the user performing the reset.|
-|userPrincipalName|String|User Principal Name of the user performing the reset.|
+
+| Property | Type | Description | 
+| -------- | ---- | ----------- |
+| authMethod | string | Provides the authentication method used by the user when performing a password reset or multi-factor authentication. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. See the [Enum values](#Enum-values-Details) section below. |
+| failureReason | String | Provides the failure reason for the corresponding reset. |
+| feature | string | Possible values are: `registration`, `reset`, `unknownFutureValue`. See the [Enum values](#Enum-values-Details) section below. |
+| id | String | Read-only | Unique Id of the activity. |
+| isSuccess | Boolean | Indicates success or failure. |
+| userDisplayName | String | User name of the user performing the reset. |
+| userPrincipalName | String | User Principal Name of the user performing the reset. |
 
 ## Enum values Details
+
 ### Auth Method Property
-| Enum Name | Value | Description
-| :---------|:-------|:----------
-email|0
-mobileSMS|1
-mobilePhone|2
-officePhone|3
-securityQuestion|4|can only be used for self-service password reset
-appNotification|5
-appNotificationCode|6
-appNotificationAndCode|7
-appPassword|8|can only be used for multi-factor authentication
-fido|9|can only be registered through combined security info registration
-alternateMobilePhone|10
-mobilePhoneAndSMS|11
+
+| Enum Name | Description |
+| --------- | ----------- |
+| email | |
+| mobileSMS | |
+| mobilePhone | |
+| officePhone | |
+| securityQuestion | Can only be used for self-service password reset. |
+| appNotification | |
+| appNotificationCode | |
+| appNotificationAndCode | |
+| appPassword | Can only be used for multi-factor authentication. |
+| fido | Can only be registered through combined security information registration. |
+| alternateMobilePhone | |
+| mobilePhoneAndSMS | |
 
 
 ### Feature Property
-| Enum Name | Value | Description
-| :---------|:-------|:----------
-registration|0| Indicates registration usage data
-reset|1| Indicates reset usage data
+
+| Enum Name | Description |
+| --------- | ----------- |
+| registration | Indicates registration usage data. |
+| reset| Indicates reset usage data. |
 
 ## Relationships
 
-None
-
+None.
 
 ## JSON representation
 

@@ -1,33 +1,32 @@
-# userRegistrationCount resource type
-Provides the registration count and status for users in your tenant.
-
 ---
+title: "userRegistrationCount"
+description: "Provides the registration count and status for users in your tenant."
 author: dkershaw
 localization_priority: Normal
 ms.prod: identity and access reports
-ms.date: 04/25/2019
 ---
 
+# userRegistrationCount resource type
+
+Provides the registration count and status for users in your tenant.
 
 ## Properties
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|registrationCount|Int64| Provides the registration count for your tenant|
-|registrationStatus|String|Provides the registration status for each registration in your tenant. Possible values are: `registered`, `enabled`, `capable`, `mfaRegistered`, `unknownFutureValue`. Check out the [Enum values](#Enum-values-Details) section below.|
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| registrationCount | Int64 | Provides the registration count for your tenant. |
+| registrationStatus | String | Provides the registration status for each registration in your tenant. Possible values are: `registered`, `enabled`, `capable`, `mfaRegistered`, `unknownFutureValue`. See the [Enum values](#Enum-values-Details) section below. |
 
 ## Enum Values 
 
 ### registrationStatus Property
 
-| Enum Name | Value | Description|
-| :---------|:-------|:----------|
-registered|0| User is registered for self-service password reset.|
-enabled|1| User is enabled for self-service password reset. |
-capable|2| User is ready to perform multi-factor authentication or self-service password reset. This is calculated based on registered and enabled status.|
-mfaRegistered|3| User is registered for multi-factor authentication.|
-
-
-
+| Enum Name | Description |
+| --------- | ----------- |
+| registered | User is registered for self-service password reset. |
+| enabled | User is enabled for self-service password reset. |
+| capable | User is ready to perform multi-factor authentication or self-service password reset. This is calculated based on registered and enabled status. |
+| mfaRegistered | User is registered for multi-factor authentication. |
 
 ## JSON representation
 

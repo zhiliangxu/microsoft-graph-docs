@@ -1,8 +1,9 @@
 ---
+title: "credentialUserRegistrationCount"
+description: "Provides the summary of self-service password reset and multi-factor authentication registration for a given tenant."
 author: dkershaw
 localization_priority: Normal
 ms.prod: identity and access reports
-ms.date: 04/25/2019
 ---
 # credentialUserRegistrationCount resource type
 
@@ -10,23 +11,22 @@ Provides the summary of self-service password reset and multi-factor authenticat
 
 ## Methods
 
-| Method       | Return Type | Description |
-|:-------------|:------------|:------------|
+| Method | Return Type | Description |
+| ------ | ------------| ----------- |
 | [Get credentialUserRegistrationCount](../api/credentialuserregistrationcount_get.md) | [credentialUserRegistrationCount](credentialuserregistrationcount.md) | Read properties and relationships of credentialUserRegistrationCount object. |
 
 
 ## Properties
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|id|String| Read-only.|Unique Id of the activity.|
-|totalUserCount|Int64|Provides the total user count in the tenant.|
-|userRegistrationCounts|[userRegistrationCount](userregistrationcount.md) collection| Provides the # of registered Users count.|
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| id | String | Read-only | Unique Id of the activity. |
+| totalUserCount | Int64 | Provides the total user count in the tenant. |
+| userRegistrationCounts | [userRegistrationCount](userregistrationcount.md) collection | Provides a collection of registration user counts.|
 
 ## Relationships
 
-None
-
+None.
 
 ## JSON representation
 
