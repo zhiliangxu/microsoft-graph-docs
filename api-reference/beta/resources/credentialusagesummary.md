@@ -14,19 +14,19 @@ Provides the summary of self-service password reset usage for a given tenant. Th
 
 | Method | Return Type | Description |
 | ------ | ----------- | ----------- |
-| [Get credentialUsageSummary](../api/credentialusagesummary_get.md) | [credentialUsageSummary](credentialusagesummary.md) | Read properties and relationships of the credentialUsageSummary object. |
+| [Get credentialUsageSummary](../api/reportroot-list-credentialusagesummary.md) | credentialUsageSummary | Read properties and relationships of the credentialUsageSummary object. |
 
 ## Properties
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| authMethod | string | Provides the authentication method available for registration or used by end users during password resets or registrations. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`. See the [Enum values](#Enum-values-Details) section below. |
+| authMethod | string | Provides the authentication method available for registration or used by end users during password resets or registrations. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`. See the [Enum values](#enum-values) section below. |
 | failureActivityCount | Int64 | Provides the count of failed resets or registration data. |
-| feature | string | Provides either the registration data or reset data. By default, both are shown. Possible values are: `registration`, `reset`. See the [Enum values](#Enum-values-Details) section below. |
+| feature | string | Provides either the registration data or reset data. By default, both are shown. Possible values are: `registration`, `reset`. See the [Enum values](#enum-values) section below. |
 | id | String | Read-only. | Unique Id of the activity. |
 | successfulActivityCount | Int64 | Provides the count of successful registrations or resets. |
 
-## Enum values Details
+## Enum values
 
 ### Auth Method Property
 

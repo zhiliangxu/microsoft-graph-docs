@@ -15,9 +15,9 @@ Provides the registration count and status for users in your tenant.
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | registrationCount | Int64 | Provides the registration count for your tenant. |
-| registrationStatus | String | Provides the registration status for each registration in your tenant. Possible values are: `registered`, `enabled`, `capable`, `mfaRegistered`, `unknownFutureValue`. See the [Enum values](#Enum-values-Details) section below. |
+| registrationStatus | String | Provides the registration status for each registration in your tenant. Possible values are: `registered`, `enabled`, `capable`, `mfaRegistered`, `unknownFutureValue`. See the [Enum values](#enum-values) section below. |
 
-## Enum Values 
+## Enum values
 
 ### registrationStatus Property
 

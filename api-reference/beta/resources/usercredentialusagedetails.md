@@ -21,7 +21,7 @@ Provides the details of self-service password reset usage for a given tenant. De
 
 | Property | Type | Description | 
 | -------- | ---- | ----------- |
-| authMethod | string | Provides the authentication method used by the user when performing a password reset or multi-factor authentication. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. See the [Enum values](#Enum-values-Details) section below. |
+| authMethod | string | Provides the authentication method used by the user when performing a password reset or multi-factor authentication. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. See the [Enum values](#enum-values) section below. |
 | failureReason | String | Provides the failure reason for the corresponding reset. |
 | feature | string | Possible values are: `registration`, `reset`, `unknownFutureValue`. See the [Enum values](#Enum-values-Details) section below. |
 | id | String | Read-only | Unique Id of the activity. |
@@ -29,7 +29,7 @@ Provides the details of self-service password reset usage for a given tenant. De
 | userDisplayName | String | User name of the user performing the reset. |
 | userPrincipalName | String | User Principal Name of the user performing the reset. |
 
-## Enum values Details
+## Enum values
 
 ### Auth Method Property
 

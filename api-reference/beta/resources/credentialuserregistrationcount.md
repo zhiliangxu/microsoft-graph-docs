@@ -13,7 +13,7 @@ Provides the summary of self-service password reset and multi-factor authenticat
 
 | Method | Return Type | Description |
 | ------ | ------------| ----------- |
-| [Get credentialUserRegistrationCount](../api/credentialuserregistrationcount_get.md) | [credentialUserRegistrationCount](credentialuserregistrationcount.md) | Read properties and relationships of credentialUserRegistrationCount object. |
+| [Get credentialUserRegistrationCount](../api/reportroot-list-credentialuserregistrationcount.md) | credentialUserRegistrationCount | Read properties and relationships of credentialUserRegistrationCount object. |
 
 
 ## Properties

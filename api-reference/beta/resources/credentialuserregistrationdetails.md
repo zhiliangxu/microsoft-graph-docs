@@ -14,13 +14,13 @@ Provides the details of self-service password reset and multi-factor authenticat
 
 | Method | Return Type | Description |
 | ------ | ----------- | ----------- |
-| [Get credentialUserRegistrationDetails](../api/credentialuserregistrationdetails_get.md) | [credentialUserRegistrationDetails](credentialuserregistrationdetails.md) | Read properties and relationships of credentialUserRegistrationDetails object. |
+| [Get credentialUserRegistrationDetails](../api/reportroot-list-credentialuserregistrationdetails.md) | credentialUserRegistrationDetails | Read properties and relationships of credentialUserRegistrationDetails object. |
 
 ## Properties
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| authMethods | String | Provides the authentication method used by the user when performing a password reset or MFA. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. See the [Enum value details](#Enum-values-Details) below. |
+| authMethods | String | Provides the authentication method used by the user when performing a password reset or MFA. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. See the [Enum value details](#enum-values) below. |
 | id | String | Read-only | Unique Id for the activity. |
 | isCapable | Boolean | Indicates whether the user is ready to perform self-service password reset or MFA. |
 | isEnabled | Boolean | Indiciates whether the user enabled to perform self-service password reset.|
@@ -28,7 +28,7 @@ Provides the details of self-service password reset and multi-factor authenticat
 | userDisplayName | String | Provides the user name of the corresponding user. |
 | userPrincipalName | String | Provides the user principal name of the corresponding user. |
 
-## Enum values Details
+## Enum values
 
 ### Auth Method Property
 
