@@ -14,7 +14,7 @@ Provides the details of self-service password reset usage for a given tenant. De
 
 | Method | Return Type | Description |
 | ------ | ----------- | ----------- |
-| [Get userCredentialUsageDetails](../api/usercredentialusagedetails_get.md) | [userCredentialUsageDetails](usercredentialusagedetails.md) | Provides the usage details on self-service password reset for the last 30 days. |
+| [Get userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md) | userCredentialUsageDetails | Provides the usage details on self-service password reset for the last 30 days. |
 
 
 ## Properties
@@ -23,7 +23,7 @@ Provides the details of self-service password reset usage for a given tenant. De
 | -------- | ---- | ----------- |
 | authMethod | string | Provides the authentication method used by the user when performing a password reset or multi-factor authentication. Possible values are: `email`, `mobileSMS`, `mobilePhone`, `officePhone`, `securityQuestion`, `appNotification`, `appNotificationCode`, `unknownFutureValue`. See the [Enum values](#enum-values) section below. |
 | failureReason | String | Provides the failure reason for the corresponding reset. |
-| feature | string | Possible values are: `registration`, `reset`, `unknownFutureValue`. See the [Enum values](#Enum-values-Details) section below. |
+| feature | string | Possible values are: `registration`, `reset`, `unknownFutureValue`. See the [Enum values](#enum-values) section below. |
 | id | String | Read-only | Unique Id of the activity. |
 | isSuccess | Boolean | Indicates success or failure. |
 | userDisplayName | String | User name of the user performing the reset. |
