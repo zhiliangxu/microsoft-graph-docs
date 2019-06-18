@@ -41,6 +41,8 @@ If successful, this method returns `204, No Content` response code. It does not 
 ## Example
 ##### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_bookingbusiness"
@@ -48,6 +50,19 @@ The following is an example of the request.
 ```http
 DELETE https://graph.microsoft.com/beta/bookingBusinesses/fabrikam@M365B489948.onmicrosoft.com
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/delete-bookingbusiness-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/delete-bookingbusiness-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/delete-bookingbusiness-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+---
+
+
 ##### Response
 The following is an example of the response.
 <!-- {

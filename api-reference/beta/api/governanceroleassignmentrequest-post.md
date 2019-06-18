@@ -101,6 +101,8 @@ In this example, an administrator assigns user nawu@fimdev.net to the Billing Re
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "governanceroleassignmentrequest_post"
@@ -124,6 +126,19 @@ Content-type: application/json
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/governanceroleassignmentrequest-post-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/governanceroleassignmentrequest-post-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/governanceroleassignmentrequest-post-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+---
+
+
 
 <!-- markdownlint-disable MD024 -->
 

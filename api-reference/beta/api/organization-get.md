@@ -57,6 +57,8 @@ If successful, this method returns a `200 OK` response code and [organization](.
 ##### Request
 
 Here is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_organization"
@@ -65,6 +67,21 @@ Here is an example of the request.
 ```http
 GET https://graph.microsoft.com/beta/organization
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/get-organization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/get-organization-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/get-organization-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 
 ##### Response
 

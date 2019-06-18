@@ -101,6 +101,8 @@ Adding an optional request header - `prefer:return=minimal` - results in the fol
 ### Request 1
 
 The following is an example of the request. There is no `$select` parameter, so a default set of properties is tracked and returned.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_delta"
@@ -109,6 +111,19 @@ The following is an example of the request. There is no `$select` parameter, so 
 ```http
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/user-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/user-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/user-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+---
+
+
 
 ### Response 1
 
@@ -175,6 +190,8 @@ Content-type: application/json
 ### Request 2
 
 The next example shows the use of the alternative minimal response behavior:
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryObject_delta"
@@ -184,6 +201,19 @@ The next example shows the use of the alternative minimal response behavior:
 GET https://graph.microsoft.com/beta/directoryObjects/delta
 Prefer: return=minimal
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/directoryobject-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/directoryobject-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/directoryobject-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+---
+
+
 
 ### Response 2
 
@@ -227,6 +257,8 @@ Content-type: application/json
 ### Request 3
 
 The next example shows the initial request using the `isOf` operator to filter out only user and group entities:
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "directoryobject_delta"
@@ -235,6 +267,19 @@ The next example shows the initial request using the `isOf` operator to filter o
 ```http
 GET https://graph.microsoft.com/beta/directoryObjects/delta?$filter=isOf('Microsoft.Graph.User')+or+isOf('Microsoft.Graph.Group')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/directoryobject-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/directoryobject-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/directoryobject-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+---
+
+
 
 ### Response 3
 

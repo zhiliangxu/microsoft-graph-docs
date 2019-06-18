@@ -92,6 +92,8 @@ Content-Type: application/json
 
 This example replaces the contents of a file with a known ID.
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
 ```http
@@ -100,6 +102,16 @@ Content-Type: text/plain
 
 The contents of the file goes here.
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/upload-via-put-id-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/upload-via-put-id-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+---
+
+
 
 ### Response
 

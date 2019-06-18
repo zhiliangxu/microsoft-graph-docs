@@ -48,6 +48,8 @@ Here is a JSON representation of the resource.
 
 ## Example
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_auditLogs"
@@ -55,6 +57,20 @@ Here is a JSON representation of the resource.
 ```http
 GET https://graph.microsoft.com/v1.0/auditLogs
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/get-auditlogs-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/get-auditlogs-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/get-auditlogs-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 <!-- {
   "blockType": "response",

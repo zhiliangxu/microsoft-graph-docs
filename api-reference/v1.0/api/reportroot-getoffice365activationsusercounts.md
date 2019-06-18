@@ -24,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+
+# [HTTP](#tab/http)
 <!-- { "blockType": "ignored" } --> 
 
 ```http
@@ -66,6 +68,20 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserCounts
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/reportroot-getoffice365activationsusercounts-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/reportroot-getoffice365activationsusercounts-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/reportroot-getoffice365activationsusercounts-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 

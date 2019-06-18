@@ -41,6 +41,8 @@ If successful, this method returns `200 OK` response code. It does not return an
 ## Example
 #### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_resetunseencount"
@@ -48,6 +50,21 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/group-resetunseencount-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/group-resetunseencount-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/group-resetunseencount-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 
 #### Response
 The following is an example of the response. 

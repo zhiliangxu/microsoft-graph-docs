@@ -38,6 +38,8 @@ If successful, this method returns `200 OK` response code. It does not return an
 ## Example
 #### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_unsubscribebymail"
@@ -45,6 +47,20 @@ The following is an example of the request.
 ```http
 POST https://graph.microsoft.com/v1.0/groups/{id}/unsubscribeByMail
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/group-unsubscribebymail-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Javascript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/group-unsubscribebymail-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/group-unsubscribebymail-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 The following is an example of the response. 
