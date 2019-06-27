@@ -165,7 +165,7 @@
       },
       {
         "files": [
-           "context.yml"
+           "v1ref.yml"
          ],
          "src": "v1.0/",
          "dest": "api/",
@@ -173,7 +173,7 @@
       },
       {
         "files": [
-           "context.yml"
+           "betaref.yml"
          ],
          "src": "beta/",
          "dest": "api/",
