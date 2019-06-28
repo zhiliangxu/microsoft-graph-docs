@@ -78,8 +78,6 @@ https://graph.microsoft.com/v1.0/me/messages?filter=emailAddress eq 'jon@contoso
 
 For more information about query parameters, see [Customize responses](query-parameters.md).
 
-test
-
 ## Next steps
 
 You're ready to get up and running with Microsoft Graph. To learn more, go to the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out some requests, try the [Quick Start](https://developer.microsoft.com/graph/quick-start), or get started using one of our [SDKs and code samples](https://developer.microsoft.com/graph/code-samples-and-sdks).
